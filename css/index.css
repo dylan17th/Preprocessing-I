@@ -3,6 +3,20 @@
    License: none (public domain)
 */
 /*Variables and mix-ins*/
+@font-face {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Asap Condensed Regular'), local('AsapCondensed-Regular'), url(https://fonts.gstatic.com/s/asapcondensed/v5/pxidypY1o9NHyXh3WvSbGSggdOeMaEk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Bhai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Bhai Regular'), local('BalooBhai-Regular'), url(https://fonts.gstatic.com/s/baloobhai/v5/ZgNWjP5GM7bCUdmXgWyVvGLONw.ttf) format('truetype');
+}
 .listFlexBox {
   display: flex;
   justify-content: space-around;
@@ -119,6 +133,15 @@ section {
 }
 body {
   line-height: 1;
+  font-family: 'Asap Condensed', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Baloo Bhai', cursive;
 }
 ol,
 ul {
@@ -292,7 +315,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border: solid black 2px;
   line-height: 2rem;
   height: 12rem;
   border-radius: 10px;
@@ -302,17 +324,21 @@ body {
 }
 .main-container .bottom-content .worker table {
   width: 100%;
+  margin: 3%;
 }
 .main-container .bottom-content .worker table tr {
   width: 100%;
-  border: black solid 2px;
+  background-color: orangered;
 }
 .main-container .bottom-content .worker table tr th {
-  border: black solid 2px;
+  border: #003385 solid 2px;
 }
 .main-container .bottom-content .worker table tr td {
   padding-left: 1rem;
-  border: black solid 2px;
+  border: #003385 solid 2px;
+}
+.main-container .bottom-content .worker table tr td:nth-child(1) {
+  text-align: center;
 }
 .main-container #contact {
   color: #003385;

@@ -5,6 +5,12 @@
 */
 
 /*Variables and mix-ins*/
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed|Baloo+Bhai&display=swap');
+
+@headingfont:'Baloo Bhai', cursive;
+
+@bodyfont: 'Asap Condensed', sans-serif;
+
 @line-height:1.5rem;
 
 @pline-height: 2rem;
@@ -58,6 +64,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family:@bodyfont;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:@headingfont;
 }
 ol, ul {
 	list-style: none;
@@ -240,7 +250,6 @@ html, body {
 			display:flex;
 			justify-content: space-evenly;
 			flex-wrap: wrap;
-			border:solid black 2px;
 			line-height: @pline-height;
 			height: 12rem;
 			border-radius: 10px;
@@ -250,24 +259,30 @@ html, body {
 			}
 			table{
 			width:100%;
+			margin: 3%;
 
 			tr{
 				width:100%;
-				border:black solid 2px;
+				background-color: @colororange;
 
 				th{
-					border:black solid 2px;
+					border:@colorblue solid 2px;
+
 				}
 				td{
 					padding-left: 1rem;
-					border:black solid 2px;
+					border:@colorblue solid 2px;
+					}
+				td:nth-child(1){
+					text-align: center;
+				}
+				
 				}
 
 			}
 
 			}
 			}
-		}
 
 	#contact{
 		color: @colorblue;
