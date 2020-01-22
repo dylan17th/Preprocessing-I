@@ -17,18 +17,6 @@
   font-display: swap;
   src: local('Baloo Bhai Regular'), local('BalooBhai-Regular'), url(https://fonts.gstatic.com/s/baloobhai/v5/ZgNWjP5GM7bCUdmXgWyVvGLONw.ttf) format('truetype');
 }
-.listFlexBox {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 1rem;
-}
-.flexBoxEven {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1rem;
-}
 html,
 body,
 div,
