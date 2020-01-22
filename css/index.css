@@ -17,6 +17,7 @@
   font-display: swap;
   src: local('Baloo Bhai Regular'), local('BalooBhai-Regular'), url(https://fonts.gstatic.com/s/baloobhai/v5/ZgNWjP5GM7bCUdmXgWyVvGLONw.ttf) format('truetype');
 }
+/*reset code begins*/
 html,
 body,
 div,
@@ -183,8 +184,18 @@ body {
   justify-content: space-evenly;
   padding: 1rem;
 }
+@media (max-width: 500px) {
+  .main-container .top-content {
+    flex-direction: column;
+  }
+}
 .main-container .top-content img {
   border-radius: 10%;
+}
+@media (max-width: 500px) {
+  .main-container .top-content img {
+    padding-bottom: 1rem;
+  }
 }
 .main-container .top-content #about {
   line-height: 1.5rem;
@@ -193,6 +204,11 @@ body {
   padding: 1rem;
   flex-wrap: wrap;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .main-container .top-content #about {
+    line-height: 2rem;
+  }
 }
 .main-container .top-content #about h1 {
   font-size: 2.5rem;
@@ -204,6 +220,13 @@ body {
   color: #003385;
   font-size: 1.7rem;
   line-height: 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .main-container .top-content #about p {
+    text-align: center;
+    padding-bottom: 1.2rem;
+  }
 }
 .main-container .top-content #about .button {
   color: #003385;
@@ -215,14 +238,29 @@ body {
   padding: 1.5%;
   border-radius: 1rem;
 }
+@media (max-width: 500px) {
+  .main-container .top-content #about .button {
+    width: 60%;
+  }
+}
 .main-container .top-content #about .button:hover {
   color: orangered;
 }
 .main-container .middle-content {
   padding-top: 4rem;
 }
+@media (max-width: 500px) {
+  .main-container .middle-content {
+    padding-top: 2rem;
+  }
+}
 .main-container .middle-content #whyMe {
   line-height: 1.5rem;
+}
+@media (max-width: 500px) {
+  .main-container .middle-content #whyMe {
+    margin: 1.2rem;
+  }
 }
 .main-container .middle-content #whyMe h2 {
   color: #003385;
@@ -246,6 +284,12 @@ body {
   border-top: #003385 solid 2px;
   border-bottom: #003385 solid 2px;
 }
+@media (max-width: 500px) {
+  .main-container .middle-content .skills {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+}
 .main-container .middle-content .skills #skill {
   width: 40%;
   display: flex;
@@ -253,6 +297,12 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  .main-container .middle-content .skills #skill {
+    width: 100%;
+    align-content: center;
+  }
 }
 .main-container .middle-content .skills #skill h2 {
   font-size: 2rem;
@@ -277,6 +327,11 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  .main-container .middle-content .personal {
+    width: 100%;
+  }
 }
 .main-container .middle-content .personal h2 {
   font-size: 2rem;
@@ -307,6 +362,11 @@ body {
   height: 12rem;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .main-container .bottom-content .worker {
+    padding-top: 2rem;
+  }
+}
 .main-container .bottom-content .worker h2 {
   font-size: 2rem;
 }
@@ -328,10 +388,21 @@ body {
 .main-container .bottom-content .worker table tr td:nth-child(1) {
   text-align: center;
 }
+@media (max-width: 500px) {
+  .main-container .bottom-content .worker table tr td:nth-child(1) {
+    padding-right: 0.5rem;
+  }
+}
 .main-container #contact {
   color: #003385;
   line-height: 2rem;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .main-container #contact {
+    text-align: center;
+    padding-top: 2rem;
+  }
 }
 .main-container #contact h3 {
   font-size: 1.3rem;

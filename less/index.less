@@ -36,7 +36,7 @@
 	justify-content: space-evenly;
 	padding:1rem
 }
-
+/*reset code begins*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -111,12 +111,10 @@ html, body {
 					.toper{
 						text-decoration: none;
 						color: @colorblue
-						&:hover{
+						}//closes toper class
+						.toper:hover{
 							color: @colororange;
-						}//closes the hover for the toper class
-					}//closes the toper class
-			
-
+						}//clsoes the toper hover class
 				}//closes the top class
 			}//closes the topic class
 		}//closes the header element
@@ -127,9 +125,16 @@ html, body {
 		border-radius: 10px;
 		margin:1rem;
 		.flexBoxEven();
+		@media(max-width: 500px){
+			flex-direction: column;
+
+		}//closes the top-content class media query
 
 		img{
 			border-radius: 10%;
+			@media(max-width: 500px){
+				padding-bottom: 1rem;
+			}//this closes the img element media query
 		}//closes the img element
 
 		#about{
@@ -137,6 +142,9 @@ html, body {
 			.flexBoxEven();
 			flex-wrap:wrap;
 			align-items: center;
+			@media(max-width: 500px){
+				line-height: 2rem;
+			}//closes out the about id media query
 			
 
 			h1{
@@ -150,6 +158,11 @@ html, body {
 				color: @colorblue;
 				font-size:1.7rem;
 				line-height: @pline-height;
+				text-align: center;
+				@media(max-width: 500px){
+						text-align: center;
+						padding-bottom: 1.2rem;
+				}//closes the p elements media query
 			}//closes the p element
 			.button{
 				color: @colorblue;
@@ -160,6 +173,9 @@ html, body {
 				font-size: @pFontSize;
 				padding:1.5%;
 				border-radius: 1rem;
+				@media(max-width: 500px){
+					width:60%;
+				}//Closes the media query for the button class
 				&:hover{
 					color:@colororange
 				}//closes the button hover 
@@ -169,10 +185,15 @@ html, body {
 
 	.middle-content{
 	padding-top: 4rem;
-	
+	@media(max-width: 500px){
+		padding-top: 2rem;
+	}//closes the media query for middle-content class 
 
 		#whyMe{
 		line-height: @line-height;
+		@media(max-width: 500px){
+			margin:1.2rem;
+		}//closes the why me id media query
 
 			h2{
 			color: @colorblue;
@@ -196,11 +217,19 @@ html, body {
 		margin: 2% 2%;
 		border-top: @colorblue solid 2px;
 		border-bottom: @colorblue solid 2px;
+		@media(max-width: 500px){
+			flex-wrap: wrap;
+			padding-top: 2rem;
+		}
 
 		
 		#skill{
 			width: 40%;
 			.listFlexBox();
+			@media(max-width: 500px){
+				width:100%;
+				align-content: center;
+			}//closes the media query for the skill id
 			h2{
 				font-size: @h2FontSize;
 				text-align: center;
@@ -219,10 +248,11 @@ html, body {
 		.personal{
 			width:40%;
 			.listFlexBox();
+			@media(max-width: 500px){
+				width:100%;
+				}//closes the media query for the personal class
 
 		
-
-	
 			h2{
 			font-size: @h2FontSize;
 			text-align: center;
@@ -253,6 +283,9 @@ html, body {
 			line-height: @pline-height;
 			height: 12rem;
 			border-radius: 10px;
+			@media(max-width: 500px){
+				padding-top: 2rem;
+			}//closes the worker class media query
 			h2{
 				font-size: @h2FontSize;
 			
@@ -275,6 +308,9 @@ html, body {
 					}//closes the td element
 				td:nth-child(1){
 					text-align: center;
+					@media(max-width: 500px){
+						padding-right: .5rem;
+					}//closes media query for the first child td element
 				}//closes the td:nth-child 
 				
 				}//closes the tr element
@@ -288,6 +324,10 @@ html, body {
 		color: @colorblue;
 		line-height: @pline-height;
 		padding: 2%;
+		@media(max-width: 500px){
+			text-align: center;
+			padding-top: 2rem;
+		}//closes the contact id media query
 
 		h3{
 			font-size: 1.3rem;
