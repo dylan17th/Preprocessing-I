@@ -149,30 +149,33 @@ body {
   background: linear-gradient(to right, white, grey);
 }
 /*Starting my code here*/
-.header {
+.main-container .header {
   padding: 2.5rem;
 }
-.header header .topic {
+.main-container .header header .topic {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
 }
-.header header .topic .top .toper {
+.main-container .header header .topic .top .toper {
   text-decoration: none;
   color: #003385;
 }
-.header header .topic .top .toper:hover {
-  color: #da5903;
+.main-container .header header .topic .top .toper:hover {
+  color: orangered;
 }
-.top-content {
+.main-container .top-content {
+  background-color: orangered;
+  border-radius: 10px;
+  margin: 1rem;
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
 }
-.top-content img {
+.main-container .top-content img {
   border-radius: 10%;
 }
-.top-content #about {
+.main-container .top-content #about {
   line-height: 1.5rem;
   display: flex;
   justify-content: space-evenly;
@@ -180,18 +183,18 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-.top-content #about h1 {
+.main-container .top-content #about h1 {
   font-size: 2.5rem;
   padding-bottom: 1rem;
   color: #003385;
   text-align: center;
 }
-.top-content #about p {
+.main-container .top-content #about p {
   color: #003385;
   font-size: 1.7rem;
   line-height: 2rem;
 }
-.top-content #about .button {
+.main-container .top-content #about .button {
   color: #003385;
   border: solid #003385 2px;
   width: 30%;
@@ -201,29 +204,29 @@ body {
   padding: 1.5%;
   border-radius: 1rem;
 }
-.top-content #about .button:hover {
-  color: #da5903;
+.main-container .top-content #about .button:hover {
+  color: orangered;
 }
-.middle-content {
+.main-container .middle-content {
   padding-top: 4rem;
 }
-.middle-content #whyMe {
+.main-container .middle-content #whyMe {
   line-height: 1.5rem;
 }
-.middle-content #whyMe h2 {
+.main-container .middle-content #whyMe h2 {
   color: #003385;
   font-size: 2rem;
   text-align: center;
   padding-bottom: 1rem;
 }
-.middle-content #whyMe p {
+.main-container .middle-content #whyMe p {
   text-align: center;
   color: #003385;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-bottom: 2rem;
 }
-.middle-content .skills {
+.main-container .middle-content .skills {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
@@ -232,7 +235,7 @@ body {
   border-top: #003385 solid 2px;
   border-bottom: #003385 solid 2px;
 }
-.middle-content .skills #skill {
+.main-container .middle-content .skills #skill {
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -240,12 +243,12 @@ body {
   flex-direction: column;
   padding: 1rem;
 }
-.middle-content .skills #skill h2 {
+.main-container .middle-content .skills #skill h2 {
   font-size: 2rem;
   text-align: center;
   color: #003385;
 }
-.middle-content .skills #skill ul {
+.main-container .middle-content .skills #skill ul {
   line-height: 3rem;
   display: flex;
   justify-content: space-around;
@@ -256,7 +259,7 @@ body {
   font-size: 1.4rem;
   list-style-type: square;
 }
-.middle-content .personal {
+.main-container .middle-content .personal {
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -264,12 +267,12 @@ body {
   flex-direction: column;
   padding: 1rem;
 }
-.middle-content .personal h2 {
+.main-container .middle-content .personal h2 {
   font-size: 2rem;
   text-align: center;
   color: #003385;
 }
-.middle-content .personal .char {
+.main-container .middle-content .personal .char {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 1rem;
@@ -282,29 +285,51 @@ body {
   justify-content: space-around;
   align-content: space-between;
 }
-.bottom-content {
-  margin: 0% 2%;
+.main-container .bottom-content {
   color: #003385;
 }
-.bottom-content .work table h2 {
-  text-align: center;
+.main-container .bottom-content .worker {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: solid black 2px;
+  line-height: 2rem;
+  height: 12rem;
+  border-radius: 10px;
 }
-#contact {
+.main-container .bottom-content .worker h2 {
+  font-size: 2rem;
+}
+.main-container .bottom-content .worker table {
+  width: 100%;
+}
+.main-container .bottom-content .worker table tr {
+  width: 100%;
+  border: black solid 2px;
+}
+.main-container .bottom-content .worker table tr th {
+  border: black solid 2px;
+}
+.main-container .bottom-content .worker table tr td {
+  padding-left: 1rem;
+  border: black solid 2px;
+}
+.main-container #contact {
   color: #003385;
   line-height: 2rem;
   padding: 2%;
 }
-#contact h3 {
+.main-container #contact h3 {
   font-size: 1.3rem;
 }
-#contact ul li a {
+.main-container #contact ul li a {
   text-decoration: none;
   color: #003385;
 }
-#contact ul li a:hover {
-  color: #da5903;
+.main-container #contact ul li a:hover {
+  color: orangered;
 }
-.footer {
+.main-container .footer {
   text-align: center;
   color: #003385;
   padding: 4rem;

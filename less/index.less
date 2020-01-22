@@ -11,7 +11,7 @@
 
 @colorblue: rgb(0, 51, 133);
 
-@colororange: rgb(218, 89, 3);
+@colororange: orangered;
 
 @h2FontSize: 2rem;
 
@@ -113,7 +113,9 @@ html, body {
 	}
 
 	.top-content{
-
+		background-color: orangered;
+		border-radius: 10px;
+		margin:1rem;
 		.flexBoxEven();
 
 		img{
@@ -203,7 +205,8 @@ html, body {
 			}
 
 		}
-		}.personal{
+		}
+		.personal{
 			width:40%;
 			.listFlexBox();
 
@@ -233,22 +236,38 @@ html, body {
 
 	.bottom-content{
 		color: @colorblue;
-		.work{
+		.worker{
 			display:flex;
-			justify-content: center;
+			justify-content: space-evenly;
 			flex-wrap: wrap;
+			border:solid black 2px;
+			line-height: @pline-height;
+			height: 12rem;
+			border-radius: 10px;
 			h2{
 				font-size: @h2FontSize;
 			
 			}
 			table{
-			width:100%
+			width:100%;
+
+			tr{
+				width:100%;
+				border:black solid 2px;
+
+				th{
+					border:black solid 2px;
+				}
+				td{
+					padding-left: 1rem;
+					border:black solid 2px;
+				}
+
+			}
+
 			}
 			}
 		}
-
-
-	}
 
 	#contact{
 		color: @colorblue;
