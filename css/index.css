@@ -2,6 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/*Variables and mix-ins*/
+.listFlexBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+}
+.flexBoxEven {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
 html,
 body,
 div,
@@ -133,8 +146,166 @@ table {
 html,
 body {
   height: 100%;
+  background: linear-gradient(to right, white, grey);
 }
 /*Starting my code here*/
-.main-container {
-  width: 100%;
+.header {
+  padding: 2.5rem;
+}
+.header header .topic {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.header header .topic .top .toper {
+  text-decoration: none;
+  color: #003385;
+}
+.header header .topic .top .toper:hover {
+  color: #da5903;
+}
+.top-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.top-content img {
+  border-radius: 10%;
+}
+.top-content #about {
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.top-content #about h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: #003385;
+  text-align: center;
+}
+.top-content #about p {
+  color: #003385;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.top-content #about .button {
+  color: #003385;
+  border: solid #003385 2px;
+  width: 30%;
+  text-align: center;
+  background-color: #c2c2c2;
+  font-size: 1.4rem;
+  padding: 1.5%;
+  border-radius: 1rem;
+}
+.top-content #about .button:hover {
+  color: #da5903;
+}
+.middle-content {
+  padding-top: 4rem;
+}
+.middle-content #whyMe {
+  line-height: 1.5rem;
+}
+.middle-content #whyMe h2 {
+  color: #003385;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.middle-content #whyMe p {
+  text-align: center;
+  color: #003385;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+.middle-content .skills {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  line-height: 1.5rem;
+  margin: 2% 2%;
+  border-top: #003385 solid 2px;
+  border-bottom: #003385 solid 2px;
+}
+.middle-content .skills #skill {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+}
+.middle-content .skills #skill h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #003385;
+}
+.middle-content .skills #skill ul {
+  line-height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+  color: #003385;
+  font-size: 1.4rem;
+  list-style-type: square;
+}
+.middle-content .personal {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+}
+.middle-content .personal h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #003385;
+}
+.middle-content .personal .char {
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+  height: 55%;
+  color: #003385;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  list-style-type: square;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+}
+.bottom-content {
+  margin: 0% 2%;
+  color: #003385;
+}
+.bottom-content .work table h2 {
+  text-align: center;
+}
+#contact {
+  color: #003385;
+  line-height: 2rem;
+  padding: 2%;
+}
+#contact h3 {
+  font-size: 1.3rem;
+}
+#contact ul li a {
+  text-decoration: none;
+  color: #003385;
+}
+#contact ul li a:hover {
+  color: #da5903;
+}
+.footer {
+  text-align: center;
+  color: #003385;
+  padding: 4rem;
 }

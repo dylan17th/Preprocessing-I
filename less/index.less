@@ -3,7 +3,33 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@blue: dodgerblue;
+
+/*Variables and mix-ins*/
+@line-height:1.5rem;
+
+@pline-height: 2rem;
+
+@colorblue: rgb(0, 51, 133);
+
+@colororange: rgb(218, 89, 3);
+
+@h2FontSize: 2rem;
+
+@pFontSize: 1.4rem;
+
+.listFlexBox{
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.flexBoxEven{
+	display: flex;
+	justify-content: space-evenly;
+	padding:1rem
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,10 +82,200 @@ table {
 
 html, body {
 	height: 100%;
+	background: linear-gradient(to right, white, grey);
 }
 
 /*Starting my code here*/
+.main-container{
+
+	.header{
+		padding: 2.5rem;
+
+		header{
+
+			.topic{
+				.flexBoxEven();
+				
+				.top{
+
+					.toper{
+						text-decoration: none;
+						color: @colorblue
+					}
+					.toper:hover{
+						color: @colororange;
+					}
+			
+
+				}
+			}
+		}
+	}
+
+	.top-content{
+
+		.flexBoxEven();
+
+		img{
+			border-radius: 10%;
+		}
+
+		#about{
+			line-height: @line-height;
+			.flexBoxEven();
+			flex-wrap:wrap;
+			align-items: center;
+			
+
+			h1{
+				font-size:2.5rem;
+				padding-bottom: 1rem;
+				color: @colorblue;
+				text-align: center;
+			}
+
+			p{
+				color: @colorblue;
+				font-size:1.7rem;
+				line-height: @pline-height;
+			}
+			.button{
+				color: @colorblue;
+				border: solid @colorblue 2px;
+				width: 30%;
+				text-align: center;
+				background-color: rgb(194, 194, 194);
+				font-size: @pFontSize;
+				padding:1.5%;
+				border-radius: 1rem;
+			}
+			.button:hover{
+				color: @colororange;
+			}
+		}
+	}
+
+	.middle-content{
+	padding-top: 4rem;
+	
+
+		#whyMe{
+		line-height: @line-height;
+
+			h2{
+			color: @colorblue;
+			font-size: @h2FontSize;
+			text-align: center;
+			padding-bottom: 1rem;
+			}
+
+			p{
+			text-align: center;
+			color: @colorblue;
+			font-size: @pFontSize;
+			line-height: @pline-height;
+			padding-bottom: 2rem;
+			}
+		}
+
+	.skills{
+		.flexBoxEven();
+		line-height: @line-height;
+		margin: 2% 2%;
+		border-top: @colorblue solid 2px;
+		border-bottom: @colorblue solid 2px;
+
+		
+		#skill{
+			width: 40%;
+			.listFlexBox();
+			h2{
+				font-size: @h2FontSize;
+				text-align: center;
+				color: @colorblue;
+			}
+			ul{
+				line-height: 3rem;
+				.listFlexBox();
+				color: @colorblue;
+				font-size: @pFontSize;
+				list-style-type: square;
+			}
+
+		}
+		}.personal{
+			width:40%;
+			.listFlexBox();
+
+		
+
+	
+			h2{
+			font-size: @h2FontSize;
+			text-align: center;
+			color: @colorblue;
+			}
+			.char{
+			.listFlexBox();
+			height: 55%;
+			color: @colorblue;
+			font-size: @pFontSize;
+			line-height: 2rem;
+			list-style-type: square;
+			display:flex;
+			justify-content: space-around;
+			align-content: space-between;
+			
+			}
+		}
+
+	}
+
+	.bottom-content{
+		color: @colorblue;
+		.work{
+			display:flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			h2{
+				font-size: @h2FontSize;
+			
+			}
+			table{
+			width:100%
+			}
+			}
+		}
 
 
+	}
 
+	#contact{
+		color: @colorblue;
+		line-height: @pline-height;
+		padding: 2%;
 
+		h3{
+			font-size: 1.3rem;
+		}
+		ul{
+			li{
+				a{
+					text-decoration: none;
+					color: @colorblue;
+				}
+				a:hover{
+					color: @colororange;
+				}
+			}
+		}
+
+	}
+
+	.footer{
+		text-align: center;
+		color: @colorblue;
+		padding: 4rem;
+
+		}
+}
